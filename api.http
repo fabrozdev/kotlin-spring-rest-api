@@ -1,0 +1,5 @@
+### Variables
+@url = http://localhost:8081/api
+
+### GET employees
+GET {{url}}/employees
