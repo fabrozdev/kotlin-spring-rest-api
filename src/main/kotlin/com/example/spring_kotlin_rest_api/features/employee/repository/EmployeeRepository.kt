@@ -5,4 +5,6 @@ import org.bson.types.ObjectId
 import org.springframework.data.mongodb.repository.MongoRepository
 
 interface EmployeeRepository: MongoRepository<Employee, ObjectId> {
+    fun findByDeletedAtIsNull(): List<Employee>
+    fun findByIdAndDeletedAtIsNull(id: ObjectId): Employee?
 }

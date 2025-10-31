@@ -14,4 +14,6 @@ data class Employee(
     val email: String,
     val role: Role,
     val createdAt: Instant,
+    val updatedAt: Instant? = null,
+    val deletedAt: Instant? = null
 )

@@ -14,3 +14,20 @@ Content-Type: application/json
   "email": "fabroz.dev@gmail.com",
   "role": 2
 }
+
+### edit employee
+PUT {{url}}/employees/6904faa1b8060c94e4cac52e
+Content-Type: application/json
+
+{
+  "firstName": "Mirthe",
+  "lastName": "Kroes",
+  "email": "mirthe.kroes@gmail.com"
+}
+
+### delete employee
+DELETE {{url}}/employees/6905235d0ee9b89b43d4419d
+Content-Type: application/json
+
+
+
