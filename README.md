@@ -111,7 +111,7 @@ docker run -d \
   mongo:latest
 
 # Connection string for authenticated MongoDB
-spring.data.mongodb.uri=mongodb://admin:password@localhost:27017/mydb?authSource=admin
+spring.data.mongodb.uri=mongodb://admin:password@localhost:27017/mongodb?authSource=admin
 ```
 
 ## Environment Variables
@@ -120,7 +120,7 @@ You can override configuration using environment variables:
 
 ```bash
 export SERVER_PORT=9090
-export SPRING_DATA_MONGODB_URI=mongodb://localhost:27017/mydb
+export MONGODB_URI=mongodb://localhost:27017/mongodb
 mvn spring-boot:run
 ```
 
