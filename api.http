@@ -1,5 +1,16 @@
 ### Variables
 @url = http://localhost:8081/api
 
-### GET employees
+### get employees
 GET {{url}}/employees
+
+### create employees
+POST {{url}}/employees
+Content-Type: application/json
+
+{
+  "firstName": "Mirthe",
+  "lastName": "Lopez",
+  "email": "fabroz.dev@gmail.com",
+  "role": 2
+}
